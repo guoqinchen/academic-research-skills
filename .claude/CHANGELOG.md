@@ -4,6 +4,27 @@ Cross-skill fixes and update history.
 
 ---
 
+## 2026-03-08
+
+### academic-pipeline v2.3 — APA 7.0 Formatting & LaTeX-to-PDF
+
+**Files changed**: `academic-pipeline/SKILL.md`, `README.md`, `README.zh-TW.md`
+
+**academic-pipeline v2.3**:
+- Stage 5 FINALIZE now prompts user for formatting style (APA 7.0 / Chicago / IEEE) before generating LaTeX
+- PDF must compile from LaTeX via `tectonic` (no HTML-to-PDF conversion allowed)
+- APA 7.0 uses `apa7` document class (`man` mode) with `natbib` option (no biber required)
+- XeCJK for bilingual CJK support; font stack: Times New Roman + Source Han Serif TC VF + Courier New
+- Known apa7 quirks documented: `noextraspace` removed in v2.15, pandoc `\LTcaptype{none}` needs `\newcounter{none}`, `\addORCIDlink` takes ID only (not full URL)
+
+**README updates**:
+- Added Performance Notes section: recommended model Claude Opus 4.6 with Max plan; large token consumption warning
+- Updated pipeline stage 5 description in both EN and zh-TW READMEs
+
+**Lesson**: Always ask the user which academic formatting style they want (APA 7.0, Chicago, IEEE, etc.) before generating the final PDF — formatting style is a separate concern from citation style
+
+---
+
 ## 2025-03-05
 
 ### v2.2 / v1.3 Cross-Agent Quality Alignment Update (4 skills)

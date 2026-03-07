@@ -26,7 +26,17 @@
 3. 兩階段審查，含魔鬼代言人
 4. 審稿與修訂之間的蘇格拉底修訂指導
 5. 出版前最終誠信驗證
-6. 輸出格式：MD + DOCX → 詢問 LaTeX → 確認 → PDF
+6. 輸出格式：MD + DOCX + LaTeX（APA 7.0 `apa7` class / IEEE / Chicago）→ tectonic 編譯 PDF
+
+---
+
+## 效能說明
+
+> **建議模型：Claude Opus 4.6**，搭配 **Max plan**（或同等的延伸思考設定）。
+>
+> 完整學術 pipeline（9 階段）會消耗**大量 token** — 單次完整執行可能超過 200K 輸入 + 100K 輸出 token，視論文長度和修訂輪數而定。請依預算斟酌使用。
+>
+> 單獨使用個別 skill（如只用 `deep-research` 或 `academic-paper-reviewer`）的消耗明顯較少。
 
 ---
 
@@ -301,7 +311,7 @@ claude.ai 的 Project 功能可以載入這些 skills，不需要安裝 Claude C
 
 **模式：** full、re-review（驗收）、quick、methodology-focus、guided
 
-### Academic Pipeline (v2.2)
+### Academic Pipeline (v2.3)
 
 9 階段調度器，含誠信驗證、兩階段審查、蘇格拉底指導：
 
@@ -317,7 +327,7 @@ claude.ai 的 Project 功能可以載入這些 skills，不需要安裝 Claude C
 | → | *蘇格拉底殘餘指導* | *引導處理剩餘問題（若為 Major）* |
 | 4'. 再修訂 | academic-paper | 最終修訂（若需要） |
 | **4.5. 最終誠信審查** | **integrity_verification_agent** | **100% 最終驗證（零問題要求）** |
-| 5. 定稿 | academic-paper | MD + DOCX → 詢問 LaTeX → 確認 → PDF |
+| 5. 定稿 | academic-paper | 詢問格式風格 → MD + DOCX + LaTeX → tectonic → PDF |
 
 **Pipeline 保證：**
 - 每個階段都需使用者確認 checkpoint
@@ -354,6 +364,9 @@ HEEACT — 高等教育評鑑中心基金會
 ---
 
 ## 更新紀錄
+
+### v2.3 / v1.3 (2026-03-08)
+- **academic-pipeline v2.3**：Stage 5 定稿階段現在會先詢問格式風格（APA 7.0 / Chicago / IEEE）；PDF 必須從 LaTeX 經 `tectonic` 編譯（禁止 HTML-to-PDF）；APA 7.0 使用 `apa7` document class（`man` 模式）+ XeCJK 支援中英雙語；字體：Times New Roman + 思源宋體 VF + Courier New
 
 ### v2.2 / v1.3 (2025-03-05)
 - **跨 Agent 品質對齊**：統一定義（同儕審查、時效規則、CRITICAL 嚴重度、來源分級）橫跨所有 agent

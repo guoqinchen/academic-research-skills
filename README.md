@@ -26,7 +26,17 @@ Research → Write → Integrity Check → Review (5-person) → Socratic Coachi
 3. Two-stage review with Devil's Advocate
 4. Socratic revision coaching between review and revision stages
 5. Final integrity verification before publication
-6. Output: MD + DOCX → ask LaTeX → confirm → PDF
+6. Output: MD + DOCX + LaTeX (APA 7.0 `apa7` class / IEEE / Chicago) → PDF via tectonic
+
+---
+
+## Performance Notes
+
+> **Recommended model: Claude Opus 4.6** with **Max plan** (or equivalent extended-thinking configuration).
+>
+> The full academic pipeline (9 stages) consumes a **large amount of tokens** — a single end-to-end run can exceed 200K input + 100K output tokens depending on paper length and revision rounds. Use at your discretion and budget accordingly.
+>
+> Individual skills (e.g., `deep-research` alone, or `academic-paper-reviewer` alone) consume significantly less.
 
 ---
 
@@ -301,7 +311,7 @@ You: "status"
 
 **Modes:** full, re-review (verification), quick, methodology-focus, guided
 
-### Academic Pipeline (v2.2)
+### Academic Pipeline (v2.3)
 
 9-stage orchestrator with integrity verification, two-stage review, and Socratic coaching:
 
@@ -317,7 +327,7 @@ You: "status"
 | → | *Socratic Residual Coaching* | *Guide user through remaining issues (if Major)* |
 | 4'. RE-REVISE | academic-paper | Final revision (if needed) |
 | **4.5. FINAL INTEGRITY** | **integrity_verification_agent** | **100% final verification (zero issues required)** |
-| 5. FINALIZE | academic-paper | MD + DOCX → ask LaTeX → confirm → PDF |
+| 5. FINALIZE | academic-paper | Ask format style → MD + DOCX + LaTeX → tectonic → PDF |
 
 **Pipeline guarantees:**
 - Every stage requires user confirmation checkpoint
@@ -354,6 +364,9 @@ HEEACT — Higher Education Evaluation and Accreditation Council of Taiwan
 ---
 
 ## Changelog
+
+### v2.3 / v1.3 (2026-03-08)
+- **academic-pipeline v2.3**: Stage 5 FINALIZE now prompts for formatting style (APA 7.0 / Chicago / IEEE); PDF must compile from LaTeX via `tectonic` (no HTML-to-PDF); APA 7.0 uses `apa7` document class (`man` mode) with XeCJK for bilingual CJK support; font stack: Times New Roman + Source Han Serif TC VF + Courier New
 
 ### v2.2 / v1.3 (2025-03-05)
 - **Cross-Agent Quality Alignment**: unified definitions (peer-reviewed, currency rule, CRITICAL severity, source tier) across all agents

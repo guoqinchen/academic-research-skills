@@ -2,12 +2,12 @@
 name: academic-pipeline
 description: "Orchestrator for the full academic research pipeline: research -> write -> integrity check -> review -> revise -> re-review -> re-revise -> final integrity check -> finalize. Coordinates deep-research, academic-paper, and academic-paper-reviewer into a seamless 9-stage workflow with mandatory integrity verification, two-stage peer review, and reproducible quality gates. Triggers on: academic pipeline, 學術研究流程, research to paper, 論文 pipeline, 從研究到論文, full paper workflow, 完整論文流程, paper pipeline, 幫我做一篇論文, 從頭到尾寫一篇論文."
 metadata:
-  version: "2.2"
-  last_updated: "2025-03-05"
+  version: "2.3"
+  last_updated: "2026-03-08"
   depends_on: "deep-research, academic-paper, academic-paper-reviewer"
 ---
 
-# Academic Pipeline v2.2 — 學術研究全流程調度器
+# Academic Pipeline v2.3 — 學術研究全流程調度器
 
 輕量級 orchestrator，管理從研究探索到論文完稿的完整學術 pipeline。不做實質工作，只負責偵測階段、推薦模式、調度 skill、管理轉場和追蹤狀態。
 
@@ -387,7 +387,7 @@ Stage 4 REVISE: [items addressed / total]
 Stage 3' RE-REVIEW: [decision]
 Stage 4' RE-REVISE: [executed / skipped]
 Stage 4.5 FINAL INTEGRITY: [PASS/FAIL] → [refs verified]
-Stage 5 FINALIZE: MD + DOCX [+ LaTeX if requested] → 確認無誤 → PDF
+Stage 5 FINALIZE: Ask format style → MD + DOCX + LaTeX (apa7/ieee/etc.) → tectonic → PDF
 
 Integrity Summary:
   Pre-review: [X] refs checked, [Y] issues found, [Y] fixed
@@ -498,10 +498,12 @@ Stage 3': academic-paper-reviewer
 
 Stage 4/4': academic-paper (revision mode)
 Stage 5: academic-paper (format-convert mode)
-  - Step 1：自動產出 MD + DOCX
-  - Step 2：詢問使用者是否需要 LaTeX 版本
-  - Step 3：使用者確認內容無誤後，產出 PDF（最終版）
-  - LaTeX 產出時自動套用中英文字體設定（Songti TC + Times New Roman）
+  - Step 1：詢問使用者要用哪種學術格式（APA 7.0 / Chicago / IEEE 等）
+  - Step 2：自動產出 MD + DOCX
+  - Step 3：產出 LaTeX（使用對應 document class，如 apa7 class for APA 7.0）
+  - Step 4：使用者確認內容無誤後，tectonic 編譯 PDF（最終版）
+  - 字體：Times New Roman（英文）+ Source Han Serif TC VF（中文）+ Courier New（等寬）
+  - PDF 必須從 LaTeX 編譯（禁止 HTML-to-PDF）
 ```
 
 ---
@@ -520,8 +522,8 @@ Stage 5: academic-paper (format-convert mode)
 
 | 項目 | 內容 |
 |------|------|
-| Skill 版本 | 2.2 |
-| 最後更新 | 2025-03-05 |
+| Skill 版本 | 2.3 |
+| 最後更新 | 2026-03-08 |
 | 維護者 | HEEACT |
 | 相依 Skills | deep-research v2.0+, academic-paper v2.0+, academic-paper-reviewer v1.1+ |
 | 角色 | 學術研究全流程調度器 |
@@ -532,6 +534,7 @@ Stage 5: academic-paper (format-convert mode)
 
 | 版本 | 日期 | 變更 |
 |------|------|------|
+| 2.3 | 2026-03-08 | Stage 5 FINALIZE: mandatory formatting style prompt (APA 7.0 / Chicago / IEEE); PDF must compile from LaTeX via tectonic (no HTML-to-PDF); APA 7.0 uses `apa7` document class (`man` mode) with XeCJK for bilingual support; font stack: Times New Roman + Source Han Serif TC VF + Courier New |
 | 2.2 | 2025-03-05 | Checkpoint confirmation semantics (6 user commands with precise actions); mode switching rules (safe/dangerous/prohibited matrix); skill failure fallback matrix (per-stage degradation strategies); state ownership protocol (single source of truth with write access control); material version control (versioned artifacts with audit trail); cross-skill reference to `shared/handoff_schemas.md` |
 | 2.1 | 2026-03 | Added plagiarism detection protocol (Phase D); enhanced integrity_verification_agent with originality verification (D1 WebSearch, D2 self-plagiarism); updated both verification modes |
 | 2.0 | 2026-02 | 新增 Stage 2.5/4.5 誠信審查、兩階段審查、強制 checkpoint、魔鬼代言人、可復現性保證、integrity_verification_agent |
