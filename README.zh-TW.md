@@ -1,6 +1,6 @@
 # Academic Research Skills for Claude Code
 
-[![Version](https://img.shields.io/badge/version-v4.1.0-blue)](https://github.com/Imbad0202/academic-research-skills/releases/tag/v4.1.0)
+[![Version](https://img.shields.io/badge/version-v2.8-blue)](https://github.com/Imbad0202/academic-research-skills/releases/tag/v2.8)
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/license-CC%20BY--NC%204.0-lightgrey)](https://creativecommons.org/licenses/by-nc/4.0/)
 [![Sponsor](https://img.shields.io/badge/sponsor-Buy%20Me%20a%20Coffee-orange?logo=buy-me-a-coffee)](https://buymeacoffee.com/crucify020v)
 
@@ -448,7 +448,7 @@ https://github.com/Imbad0202/academic-research-skills
 
 ## 更新紀錄
 
-### v4.1.0 (2026-03-22) — SCR Loop Phase 1：State-Challenge-Reflect 反思機制
+### v2.8 (2026-03-22) — SCR Loop Phase 1：State-Challenge-Reflect 反思機制
 - **Socratic Mentor Agent**（deep-research + academic-paper）：整合 SCR（表態-挑戰-反思）協議
   - **Commitment Gate**：在每個層級/章節轉換前收集使用者預測，再呈現資料
   - **Certainty-Triggered Contradiction**：偵測高信心語句（「顯然」「毫無疑問」），自動引入反面觀點

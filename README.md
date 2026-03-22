@@ -1,6 +1,6 @@
 # Academic Research Skills for Claude Code
 
-[![Version](https://img.shields.io/badge/version-v4.1.0-blue)](https://github.com/Imbad0202/academic-research-skills/releases/tag/v4.1.0)
+[![Version](https://img.shields.io/badge/version-v2.8-blue)](https://github.com/Imbad0202/academic-research-skills/releases/tag/v2.8)
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/license-CC%20BY--NC%204.0-lightgrey)](https://creativecommons.org/licenses/by-nc/4.0/)
 [![Sponsor](https://img.shields.io/badge/sponsor-Buy%20Me%20a%20Coffee-orange?logo=buy-me-a-coffee)](https://buymeacoffee.com/crucify020v)
 
@@ -449,7 +449,7 @@ https://github.com/Imbad0202/academic-research-skills
 
 ## Changelog
 
-### v4.1.0 (2026-03-22) — SCR Loop Phase 1: State-Challenge-Reflect
+### v2.8 (2026-03-22) — SCR Loop Phase 1: State-Challenge-Reflect
 - **Socratic Mentor Agent** (deep-research + academic-paper): SCR (State-Challenge-Reflect) protocol integration
   - **Commitment Gates**: Collect user predictions before presenting evidence at each layer/chapter transition
   - **Certainty-Triggered Contradiction**: Detect high-confidence language ("obviously", "clearly") and introduce counterpoints
