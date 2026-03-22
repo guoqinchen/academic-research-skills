@@ -10,6 +10,13 @@ A comprehensive suite of Claude Code skills for academic research, covering the 
 
 ---
 
+## Guides & Articles
+
+- [Academic Writing Shouldn't Be a Solo Act](https://open.substack.com/pub/edwardwu223235/p/academic-writing-shouldnt-be-a-solo?r=4dczl&utm_medium=ios) — A detailed walkthrough of the full pipeline workflow (English)
+- [用 AI 寫論文？先讓 AI 學會做研究](https://open.substack.com/pub/edwardwu223235/p/ai?r=4dczl&utm_medium=ios) — 完整使用指南（繁體中文）
+
+---
+
 ## Features
 
 - **Deep Research** — 13-agent research team with Socratic guided mode + systematic review / PRISMA + SCR Loop

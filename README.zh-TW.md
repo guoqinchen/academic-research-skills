@@ -10,6 +10,13 @@
 
 ---
 
+## 使用指南與文章
+
+- [用 AI 寫論文？先讓 AI 學會做研究](https://open.substack.com/pub/edwardwu223235/p/ai?r=4dczl&utm_medium=ios) — 完整使用指南（繁體中文）
+- [Academic Writing Shouldn't Be a Solo Act](https://open.substack.com/pub/edwardwu223235/p/academic-writing-shouldnt-be-a-solo?r=4dczl&utm_medium=ios) — Full pipeline walkthrough (English)
+
+---
+
 ## 功能特色
 
 - **Deep Research** — 13 個 Agent 組成的研究團隊，支援蘇格拉底引導（含 SCR 反思機制）+ 系統性文獻回顧 / PRISMA
