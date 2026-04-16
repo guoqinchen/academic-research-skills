@@ -1,0 +1,367 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1776301779127,
+  "projectRoot": "/Users/gq/academic-research-skills",
+  "techStack": {
+    "languages": [],
+    "frameworks": [],
+    "packageManager": null,
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": null,
+    "testCommand": null,
+    "lintCommand": null,
+    "devCommand": null,
+    "scripts": {}
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [
+      "examples",
+      "scripts"
+    ],
+    "gitBranches": {
+      "defaultBranch": "main",
+      "branchingStrategy": null
+    }
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "academic-paper": {
+      "path": "academic-paper",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1776301779112,
+      "keyFiles": [
+        "SKILL.md"
+      ]
+    },
+    "academic-paper-reviewer": {
+      "path": "academic-paper-reviewer",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1776301779112,
+      "keyFiles": [
+        "SKILL.md"
+      ]
+    },
+    "academic-pipeline": {
+      "path": "academic-pipeline",
+      "purpose": null,
+      "fileCount": 2,
+      "lastAccessed": 1776301779112,
+      "keyFiles": [
+        "SKILL.md"
+      ]
+    },
+    "deep-research": {
+      "path": "deep-research",
+      "purpose": null,
+      "fileCount": 2,
+      "lastAccessed": 1776301779112,
+      "keyFiles": [
+        "SKILL.md"
+      ]
+    },
+    "examples": {
+      "path": "examples",
+      "purpose": "Example code",
+      "fileCount": 3,
+      "lastAccessed": 1776301779113,
+      "keyFiles": [
+        "benchmark_report_template.json",
+        "passport_with_repro_lock.yaml"
+      ]
+    },
+    "scripts": {
+      "path": "scripts",
+      "purpose": "Build/utility scripts",
+      "fileCount": 11,
+      "lastAccessed": 1776301779113,
+      "keyFiles": [
+        "_skill_lint.py",
+        "_test_helpers.py",
+        "check_benchmark_report.py",
+        "check_data_access_level.py",
+        "check_repro_lock.py"
+      ]
+    },
+    "shared": {
+      "path": "shared",
+      "purpose": null,
+      "fileCount": 8,
+      "lastAccessed": 1776301779113,
+      "keyFiles": [
+        "artifact_reproducibility_pattern.md",
+        "benchmark_report.schema.json",
+        "benchmark_report_pattern.md",
+        "cross_model_verification.md",
+        "ground_truth_isolation_pattern.md"
+      ]
+    },
+    "academic-paper/examples": {
+      "path": "academic-paper/examples",
+      "purpose": "Example code",
+      "fileCount": 6,
+      "lastAccessed": 1776301779113,
+      "keyFiles": [
+        "chinese_paper_example.md",
+        "imrad_hei_example.md",
+        "literature_review_example.md"
+      ]
+    },
+    "academic-paper-reviewer/examples": {
+      "path": "academic-paper-reviewer/examples",
+      "purpose": "Example code",
+      "fileCount": 2,
+      "lastAccessed": 1776301779113,
+      "keyFiles": [
+        "hei_paper_review_example.md",
+        "interdisciplinary_review_example.md"
+      ]
+    },
+    "academic-pipeline/examples": {
+      "path": "academic-pipeline/examples",
+      "purpose": "Example code",
+      "fileCount": 3,
+      "lastAccessed": 1776301779113,
+      "keyFiles": [
+        "full_pipeline_example.md",
+        "integrity_failure_recovery.md",
+        "mid_entry_example.md"
+      ]
+    },
+    "deep-research/examples": {
+      "path": "deep-research/examples",
+      "purpose": "Example code",
+      "fileCount": 7,
+      "lastAccessed": 1776301779113,
+      "keyFiles": [
+        "exploratory_research.md",
+        "fact_check_mode.md",
+        "handoff_to_paper.md"
+      ]
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "",
+      "accessCount": 8,
+      "lastAccessed": 1776306978978,
+      "type": "directory"
+    },
+    {
+      "path": "academic-paper-reviewer/SKILL.md",
+      "accessCount": 7,
+      "lastAccessed": 1776302593579,
+      "type": "file"
+    },
+    {
+      "path": "CLAUDE.md",
+      "accessCount": 7,
+      "lastAccessed": 1776306810196,
+      "type": "file"
+    },
+    {
+      "path": "shared/handoff_schemas.md",
+      "accessCount": 6,
+      "lastAccessed": 1776302719560,
+      "type": "file"
+    },
+    {
+      "path": "deep-research/SKILL.md",
+      "accessCount": 5,
+      "lastAccessed": 1776302560090,
+      "type": "file"
+    },
+    {
+      "path": "academic-paper/SKILL.md",
+      "accessCount": 5,
+      "lastAccessed": 1776302560324,
+      "type": "file"
+    },
+    {
+      "path": ".claude/CLAUDE.md",
+      "accessCount": 5,
+      "lastAccessed": 1776306810220,
+      "type": "file"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "accessCount": 4,
+      "lastAccessed": 1776302161209,
+      "type": "file"
+    },
+    {
+      "path": "academic-paper-reviewer/references/changelog.md",
+      "accessCount": 4,
+      "lastAccessed": 1776302424924,
+      "type": "file"
+    },
+    {
+      "path": "academic-pipeline/SKILL.md",
+      "accessCount": 4,
+      "lastAccessed": 1776302560835,
+      "type": "file"
+    },
+    {
+      "path": "MODE_REGISTRY.md",
+      "accessCount": 3,
+      "lastAccessed": 1776302151896,
+      "type": "file"
+    },
+    {
+      "path": "academic-paper/references/changelog.md",
+      "accessCount": 3,
+      "lastAccessed": 1776302424861,
+      "type": "file"
+    },
+    {
+      "path": "deep-research/references/changelog.md",
+      "accessCount": 3,
+      "lastAccessed": 1776302424886,
+      "type": "file"
+    },
+    {
+      "path": "academic-pipeline/references/changelog.md",
+      "accessCount": 3,
+      "lastAccessed": 1776302424935,
+      "type": "file"
+    },
+    {
+      "path": "academic-pipeline/examples/full_pipeline_example.md",
+      "accessCount": 2,
+      "lastAccessed": 1776302447944,
+      "type": "file"
+    },
+    {
+      "path": "scripts/check_spec_consistency.py",
+      "accessCount": 2,
+      "lastAccessed": 1776302582707,
+      "type": "file"
+    },
+    {
+      "path": "scripts/test_check_repro_lock.py",
+      "accessCount": 2,
+      "lastAccessed": 1776302613578,
+      "type": "file"
+    },
+    {
+      "path": "scripts/test_check_benchmark_report.py",
+      "accessCount": 2,
+      "lastAccessed": 1776302629676,
+      "type": "file"
+    },
+    {
+      "path": "scripts/test_check_spec_consistency.py",
+      "accessCount": 2,
+      "lastAccessed": 1776302692556,
+      "type": "file"
+    },
+    {
+      "path": "README.md",
+      "accessCount": 1,
+      "lastAccessed": 1776301796489,
+      "type": "file"
+    },
+    {
+      "path": "POSITIONING.md",
+      "accessCount": 1,
+      "lastAccessed": 1776301796537,
+      "type": "file"
+    },
+    {
+      "path": "QUICKSTART.md",
+      "accessCount": 1,
+      "lastAccessed": 1776301796551,
+      "type": "file"
+    },
+    {
+      "path": "requirements-dev.txt",
+      "accessCount": 1,
+      "lastAccessed": 1776301829262,
+      "type": "file"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "accessCount": 1,
+      "lastAccessed": 1776301829299,
+      "type": "file"
+    },
+    {
+      "path": "scripts/check_task_type.py",
+      "accessCount": 1,
+      "lastAccessed": 1776302050105,
+      "type": "file"
+    },
+    {
+      "path": "scripts/_skill_lint.py",
+      "accessCount": 1,
+      "lastAccessed": 1776302050118,
+      "type": "file"
+    },
+    {
+      "path": "scripts/check_data_access_level.py",
+      "accessCount": 1,
+      "lastAccessed": 1776302050155,
+      "type": "file"
+    },
+    {
+      "path": "scripts/check_benchmark_report.py",
+      "accessCount": 1,
+      "lastAccessed": 1776302073551,
+      "type": "file"
+    },
+    {
+      "path": "scripts/check_repro_lock.py",
+      "accessCount": 1,
+      "lastAccessed": 1776302073576,
+      "type": "file"
+    },
+    {
+      "path": "shared/mode_spectrum.md",
+      "accessCount": 1,
+      "lastAccessed": 1776302073600,
+      "type": "file"
+    },
+    {
+      "path": "shared/ground_truth_isolation_pattern.md",
+      "accessCount": 1,
+      "lastAccessed": 1776302073662,
+      "type": "file"
+    },
+    {
+      "path": "academic-paper-reviewer/examples/hei_paper_review_example.md",
+      "accessCount": 1,
+      "lastAccessed": 1776302151822,
+      "type": "file"
+    },
+    {
+      "path": "scripts/test_check_task_type.py",
+      "accessCount": 1,
+      "lastAccessed": 1776302468508,
+      "type": "file"
+    },
+    {
+      "path": "academic-paper/references/vlm_figure_verification.md",
+      "accessCount": 1,
+      "lastAccessed": 1776302546899,
+      "type": "file"
+    },
+    {
+      "path": "scripts/_test_helpers.py",
+      "accessCount": 1,
+      "lastAccessed": 1776302613554,
+      "type": "file"
+    }
+  ],
+  "userDirectives": []
+}

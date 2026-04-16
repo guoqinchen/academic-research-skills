@@ -33,3 +33,13 @@ jobs:
         env:
           PYTHONPATH: scripts
         run: python3 scripts/check_task_type.py
+
+      - name: Check repro_lock declarations
+        env:
+          PYTHONPATH: scripts
+        run: |
+          for passport in examples/*/passport*.yaml; do
+            python3 scripts/check_repro_lock.py "$passport" || exit 1
+          done
+          # If no passports found, verify check_repro_lock works in opt-out mode
+          echo "repro_lock: null" | python3 scripts/check_repro_lock.py /dev/stdin

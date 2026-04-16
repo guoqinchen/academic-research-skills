@@ -12,7 +12,7 @@ Consuming agents should validate input and request re-generation if schema viola
 
 ## Schema 1: RQ Brief (deep-research -> academic-paper)
 
-**Producer**: `deep-research/research_question_agent` | `deep-research/socratic_mentor_agent`
+**Producer**: `deep-research/research_question_agent` (primary); `deep-research/socratic_mentor_agent` produces a "Research Plan Summary + INSIGHT Collection" which may be reformatted into an RQ Brief
 **Consumer**: `deep-research/research_architect_agent` | `academic-paper/intake_agent`
 
 ### Required Fields

@@ -79,6 +79,13 @@ Materials: Complete paper text. field_analyst_agent auto-detects domain and conf
 ### academic-paper-reviewer → academic-paper (revision)
 Materials: Editorial Decision Letter, Revision Roadmap, Per-reviewer detailed comments
 
+## Development
+
+For linting, testing, and CI commands, see the root `CLAUDE.md`:
+- `python scripts/_skill_lint.py` — lint all skill files
+- `python scripts/check_spec_consistency.py` — validate SPEC consistency
+- `python -m pytest scripts/test_*.py -v` — run tests
+
 ## Version Info
 - **Suite version**: 3.3.5 (per CHANGELOG.md)
 - **Last Updated**: 2026-04-15
