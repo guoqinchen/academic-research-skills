@@ -87,7 +87,7 @@ For linting, testing, and CI commands, see the root `CLAUDE.md`:
 - `python -m pytest scripts/test_*.py -v` — run tests
 
 ## Version Info
-- **Suite version**: 3.3.5 (per CHANGELOG.md)
+- **Suite version**: 3.3.6 (per CHANGELOG.md)
 - **Last Updated**: 2026-04-15
 - **Author**: Cheng-I Wu
 - **License**: CC-BY-NC 4.0
