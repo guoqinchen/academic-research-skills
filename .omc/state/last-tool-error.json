@@ -1,7 +1,0 @@
-{
-  "tool_name": "Bash",
-  "tool_input_preview": "{\"command\":\"ls -la /Users/gq/academic-research-skills/package.json /Users/gq/academic-research-skills/pyproject.toml /Users/gq/academic-research-skills/Cargo.toml /Users/gq/academic-research-skills/go...",
-  "error": "Exit code 1",
-  "timestamp": "2026-04-16T02:36:10.094Z",
-  "retry_count": 2
-}
